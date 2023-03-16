@@ -14,6 +14,11 @@ A soothing pastel theme for Instagram for Web.
     2.  Otherwise, select dark theme.
 4.  [Click here](https://github.com/haiksgithub/catppuccin-instagram/raw/main/catppuccin-instagram.user.css) to install the user style.
 
+## TODO
+
+- [ ] Style bloks in *Settings > Privacy and Secuirty*.
+- [ ] Make a function to make universal `filter`s for icons from the PNG sprite.
+
 ## License
 
 [Zero Claused BSD License](https://github.com/haiksgithub/catppuccin-instagram/blob/main/license.md)
