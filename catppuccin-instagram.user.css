@@ -32,6 +32,8 @@
   'Teal',
   'Yellow'
 ]
+
+@var number scrollbar_width 'Scrollbar Width (in pixels)' 5
 ==/UserStyle== */
 
 @-moz-document domain('instagram.com')
@@ -336,6 +338,16 @@
   ._ab85 .xvbhtw8
   ._aav4
     background-color: get('crust')
+  
+  // Scrollbar
+  ::-webkit-scrollbar
+    width: (scrollbar_width)px
+    background-color: get('surface0')
+  
+  ::-webkit-scrollbar-thumb
+    background-color: get(accent)
+    border-radius: 10px
+
 @-moz-document regexp('^.*instagram.com/direct.*')
   // Chat background
   .xnz67gz
