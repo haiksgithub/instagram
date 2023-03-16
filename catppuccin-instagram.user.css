@@ -348,26 +348,6 @@
     background-color: get(accent)
     border-radius: 10px
 
-  // Bloks in Settings
-  [data-bloks-name='bk.components.Collection']
-    background-color: get('mantle')
-
-  .wbloks_1[style*='rgb(0\, 0\, 0)']
-    background-color: get('crust') !important
-    padding: 1em !important
-    margin: 0.5em 0
-    border-radius: 10px
-  
-  .wbloks_1[style*='rgb(0\, 149\, 246)']
-    background-color: get(accent) !important
-    
-  .wbloks_1[style*='rgb(255\, 255\, 255)']
-    background-color: get('base') !important
-  
-  .wbloks_1[style*='rgb(54\, 54\, 54)']
-  .wbloks_1[style*='rgb(38\, 38\, 38)']
-    background-color: get('surface0') !important
-
 @-moz-document regexp('^.*instagram.com/direct.*')
   // Chat background
   .xnz67gz
