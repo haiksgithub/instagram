@@ -77,7 +77,7 @@
   else if accent == 'Yellow'
     accent = 'yellow'
 
-  // TODO: REMOVE THE PALETTE
+  // TODO: Move the palette to a separate repository.
   catppuccin = {
     'espresso': {
       'rosewater': #f5e0dc,
@@ -221,14 +221,14 @@
     }
   }
 
-  // Gets a get form the Catppuccin palette
+  // Gets a colour from the palette
   get($flavor, $accent = false)
     if $accent
       return catppuccin[$flavor][$accent]
     else
       return catppuccin[flavor][$flavor]
 
-  // Convert the get to 'r, g, b' string for Instagram variables
+  // Converts the colour to an "r, g, b" string
   raw($color)
     return s('%s, %s, %s', red($color), green($color), blue($color))
 
