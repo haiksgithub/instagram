@@ -8,33 +8,75 @@
 @preprocessor stylus
 
 @var select flavor 'Flavour' [
-  'latte',
-  'frappe',
-  'macchiato',
-  'mocha',
-  'espresso'
+  'Latte',
+  'Frappe',
+  'Macchiato',
+  'Mocha',
+  'Espresso'
 ]
 
 @var select accent 'Accent Colour' [
-  'blue',
-  'flamingo',
-  'green',
-  'lavender',
-  'mantle',
-  'maroon',
-  'mauve',
-  'peach',
-  'pink',
-  'red',
-  'rosewater',
-  'sapphire',
-  'sky',
-  'teal',
-  'yellow'
+  'Blue',
+  'Flamingo',
+  'Green',
+  'Lavender',
+  'Mantle',
+  'Maroon',
+  'Mauve',
+  'Peach',
+  'Pink',
+  'Red',
+  'Rosewater',
+  'Sapphire',
+  'Sky',
+  'Teal',
+  'Yellow'
 ]
 ==/UserStyle== */
 
 @-moz-document domain('instagram.com')
+  if flavor == 'Latte'
+    flavor = 'latte'
+  else if flavor == 'Frappe'
+    flavor = 'frappe'
+  else if flavor == 'Macchiato'
+    flavor = 'macchiato'
+  else if flavor == 'Mocha'
+    flavor = 'mocha'
+  else if flavor == 'Espresso'
+    flavor = 'espresso'
+
+  if accent == 'Blue'
+    accent = 'blue'
+  else if accent == 'Flamingo'
+    accent = 'flamingo'
+  else if accent == 'Green'
+    accent = 'green'
+  else if accent == 'Lavender'
+    accent = 'lavender'
+  else if accent == 'Mantle'
+    accent = 'mantle'
+  else if accent == 'Maroon'
+    accent = 'maroon'
+  else if accent == 'Mauve'
+    accent = 'mauve'
+  else if accent == 'Peach'
+    accent = 'peach'
+  else if accent == 'Pink'
+    accent = 'pink'
+  else if accent == 'Red'
+    accent = 'red'
+  else if accent == 'Rosewater'
+    accent = 'rosewater'
+  else if accent == 'Sapphire'
+    accent = 'sapphire'
+  else if accent == 'Sky'
+    accent = 'sky'
+  else if accent == 'Teal'
+    accent = 'teal'
+  else if accent == 'Yellow'
+    accent = 'yellow'
+
   // TODO: REMOVE THE PALETTE
   catppuccin = {
     'espresso': {
@@ -182,13 +224,13 @@
   // Gets a get form the Catppuccin palette
   get($flavor, $accent = false)
     if $accent
-      catppuccin[lookup('$flavor')][lookup('$accent')]
+      return catppuccin[$flavor][$accent]
     else
-      catppuccin[lookup('flavor')][lookup('$flavor')]
+      return catppuccin[flavor][$flavor]
 
   // Convert the get to 'r, g, b' string for Instagram variables
   raw($color)
-    s('%s, %s, %s', red($color), green($color), blue($color))
+    return s('%s, %s, %s', red($color), green($color), blue($color))
 
   // Override default variables
   *
