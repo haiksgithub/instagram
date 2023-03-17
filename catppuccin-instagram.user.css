@@ -45,7 +45,7 @@
     return s('var(--ctp-%s-%s%s)', unquote(flavor), unquote(clr), unquote(suffix));
   }
 
-  get_transparent(clr, amount) {
+  get_transparency(clr, amount) {
     return convert(s('@css{ rgba(%s, %s) }', get(clr, 'raw'), amount));
   }
 
