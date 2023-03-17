@@ -196,7 +196,7 @@
   // Scrollbar
   ::-webkit-scrollbar {
     width: (scrollbar_width)px;
-    background-color: get('surface0');
+    background-color: get('crust');
   }
   
   ::-webkit-scrollbar-thumb {
