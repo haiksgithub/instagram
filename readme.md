@@ -1,7 +1,7 @@
 # Catppuccin for Instagram
 
 > **Warning**  
-> This work on this project is still in progress. There may be some inconsistencies in the web-site.
+> The work on this project is still in progress. There may be some inconsistencies in the web-site.
 
 A soothing pastel theme for Instagram for Web.
 
