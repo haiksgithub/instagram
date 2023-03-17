@@ -37,7 +37,7 @@
 ==/UserStyle== */
 
 @-moz-document domain('instagram.com') {
-  @import url('https://unpkg.com/@catppuccin/palette@0.1.7/css/catppuccin.css');
+  @import url('https://cdn.jsdelivr.net/gh/haiksgithub/catppuccin-palette-css@v0.1.7/catppuccin.css');
 
   // Gets a colour from the palette
   get(clr, model = false) {
