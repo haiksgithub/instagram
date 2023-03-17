@@ -160,7 +160,7 @@
 
   // Dialog overlay
   .x7r02ix[role='dialog'] {
-    box-shadow: 0 5px 10px 0 get_transparency(light_color, 0.5);
+    box-shadow: 0 5px 10px 0 get_transparency(dark_color, 0.5);
   }
 
   // Input placeholders
