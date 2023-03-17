@@ -13,6 +13,7 @@ A soothing pastel theme for Instagram for Web.
     1.  If you are going to use Latte, change to the light theme.
     2.  Otherwise, select dark theme.
 4.  [Click here](https://github.com/haiksgithub/catppuccin-instagram/raw/main/catppuccin-instagram.user.css) to install the user style.
+5.  If you are using Firefox, go to `about:config` and set `layout.css.has-selector.enabled` to `true`.
 
 ## TODO
 
