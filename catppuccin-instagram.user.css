@@ -203,6 +203,11 @@
     background-color: get(accent);
     border-radius: 10px;
   }
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: get(accent) get('crust');
+  }
 }
   
 @-moz-document regexp('^.*instagram.com/direct.*') {
