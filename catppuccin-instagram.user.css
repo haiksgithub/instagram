@@ -271,6 +271,7 @@
 
     --ig-link: raw(get(accent))
     --ig-error-or-destructive: raw(get('red'))
+    --ig-success: raw(get('green'))
 
   // Sidebar
   .x1xgvd2v
@@ -344,6 +345,15 @@
   ._ab85 .xvbhtw8
   ._aav4
     background-color: get('crust')
+
+  // Map pop-ups
+  .leaflet-popup-content-wrapper
+  .leaflet-popup-tip
+    background-color: get('mantle')
+    box-shadow: 0 5px 15px rgba(dark, 0.4)
+
+    *
+      color: get('text') !important
   
   // Scrollbar
   ::-webkit-scrollbar
