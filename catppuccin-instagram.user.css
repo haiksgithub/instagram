@@ -234,10 +234,14 @@
   raw($color)
     return s('%s, %s, %s', red($color), green($color), blue($color))
 
+  // Always dark/light independent of the flavor
+  dark = get(flavor == 'latte' ? 'text' : 'crust')
+  light = get(flavor == 'latte' ? 'crust' : 'text')
+
   // Override default variables
   *
-    --web-always-black: raw(get(flavor == 'latte' ? 'text' : 'crust'))
-    --web-always-white: raw(get(flavor == 'latte' ? 'crust' : 'text'))
+    --web-always-black: raw(dark)
+    --web-always-white: raw(light)
 
     --overlay-alpha-80: rgba(get('surface0'), 0.5)
 
@@ -282,7 +286,7 @@
   ._aggc
     padding: 1em
     background-color: get('mantle')
-    border: 1px solid @css{ rgb(var(--ig-separator)) } !important
+    border: 1px solid get('overlay0') !important
     border-radius: var(--modal-border-radius)
     box-sizing: border-box
 
@@ -318,16 +322,18 @@
   // Profile banner
   div:has(> .x1mu97ne)
     background-color: get('crust')
+    border: 1px solid get('overlay0')
+    box-shadow: 0 10px 35px 2px rgba(dark, 0.7)
 
   // Dialog overlay
   .x7r02ix[role='dialog']
-    box-shadow: 0 5px 10px 0 @css{ rgba(var(--web-always-black), 0.5) }
+    box-shadow: 0 5px 10px 0 rgba(light, 0.5)
 
   // Input placeholders
   ._ac4d::placeholder
   ._aauy::placeholder
   textarea::placeholder
-    color: @css{ rgb(var(--ig-secondary-text)) }
+    color: get('subtext0')
 
   // Settings
   ._ab81
@@ -351,7 +357,7 @@
 @-moz-document regexp('^.*instagram.com/direct.*')
   // Chat background
   .xnz67gz
-    background-color: @css{ rgb(var(--ig-primary-background)) }
+    background-color: get('base')
 
   .xvbhtw8
     background-color: get('mantle')
