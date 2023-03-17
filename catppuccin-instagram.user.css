@@ -67,7 +67,7 @@
     --ig-elevated-background: get('crust', 'raw');
 
     --ig-primary-button: get(accent, 'raw');
-    --ig-primary-button-hover: get(accent, 'raw');
+    --ig-primary-button-hover: get(accent, 'raw'), 0.8;
 
     --ig-secondary-button-background: get('surface0', 'raw');
     --ig-secondary-button-hover: get('surface1', 'raw');
