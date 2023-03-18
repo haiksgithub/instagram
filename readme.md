@@ -17,7 +17,7 @@ A soothing pastel theme for Instagram for Web.
 
 ## TODO
 
-- [ ] Style bloks in *Settings > Privacy and Secuirty*.
+- [x] Style bloks in *Settings > Privacy and Secuirty*.
 - [ ] Make a function to make universal `filter`s for icons from the PNG sprite.
 
 ## License
