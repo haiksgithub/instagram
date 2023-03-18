@@ -88,6 +88,12 @@
     --ig-error-or-destructive: get('red', 'raw');
     --ig-success: get('green', 'raw');
   }
+  
+  // Text selection
+  *::selection {
+    color: get(dark_color);
+    background-color: get(accent);
+  }
 
   // Sidebar
   .x1xgvd2v {
