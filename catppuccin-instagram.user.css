@@ -189,6 +189,59 @@
     background-color: get('crust');
   }
 
+  // Bloks
+  .wbloks_1[data-bloks-name='bk.components.Collection'] {
+    background-color: get('mantle');
+  }
+
+  .wbloks_1[data-bloks-name='bk.components.Flexbox'] {
+    // Radios have left padding
+    padding-left: 0 !important;
+
+    // The heading
+    &[style*='background: rgb(0\, 0\, 0)'],
+    &[style*='background: rgb(255\, 255\, 255)'] {
+      background-color: get('mantle') !important;
+    }
+    
+    // Radios
+    &[style*='border-radius: 10.5px'],
+    &[style*='border-radius: 12px'],
+    &[style*='border-radius: 4px'] {
+      // Selected radio
+      &[style*='background: rgb(0\, 149\, 246)'] {
+        background-color: get(accent) !important;
+      }
+  
+      // Not selected radio
+      &[style*='background: rgb(219\, 219\, 219)'],
+      &[style*='background: rgb(38\, 38\, 38)'],
+      &[style*='background: rgb(54\, 54\, 54)'],
+      &[style*='background: rgb(255\, 255\, 255)'] {
+        background-color: get('crust') !important;
+      }
+    }
+    
+    // That "border"
+    &[style*='background: rgb(38\, 38\, 38)'] {
+      display: none;
+    }
+  }
+ 
+  span[data-bloks-name='bk.components.TextSpan'],
+  span[data-bloks-name='bk.components.Text']{
+    &[style*='color: rgb(250\, 250\, 250)'],
+    &[style*='color: rgb(224\, 241\, 255)'],
+    &[style*='color: rgb(0\, 55\, 107)'],
+    &[style*='color: rgb(38\, 38\, 38)'] {
+      color: get('text') !important;
+    }
+    
+    &[style*='color: rgb(142\, 142\, 142)'] {
+      color: get('subtext0') !important;
+    }
+  }
+
   // Map pop-ups
   .leaflet-popup-content-wrapper,
   .leaflet-popup-tip {
