@@ -114,6 +114,7 @@
     background-color: get('mantle');
     border: 1px solid get('overlay0') !important;
     border-radius: var(--modal-border-radius);
+    box-shadow: 0 3px 5px -1px get_transparency(dark_color, 0.2);
     box-sizing: border-box;
   }
 
