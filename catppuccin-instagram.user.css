@@ -85,7 +85,7 @@
     --grey-2: get('overlay0', 'raw');
 
     --ig-link: get(accent, 'raw');
-    --ig-error-or-destructive: get('red', 'raw');
+    --ig-error-or-destructive: get('maroon', 'raw');
     --ig-success: get('green', 'raw');
   }
   
