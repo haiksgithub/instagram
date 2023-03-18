@@ -55,8 +55,8 @@
 
   // Override default variables
   * {
-    --web-always-black: get(dark_color);
-    --web-always-white: get(light_color);
+    --web-always-black: get(dark_color, 'raw');
+    --web-always-white: get(light_color, 'raw');
 
     --overlay-alpha-80: get_transparency(dark_color, 0.5);
 
