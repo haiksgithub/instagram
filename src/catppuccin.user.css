@@ -78,6 +78,7 @@
     --ig-secondary-text: get('subtext0', 'raw');
     --ig-tertiary-text: get('subtext0', 'raw');
     --wbloks-primary-text: get('text');
+    --ig-text-on-media: get('text', 'raw');
 
     --ig-separator: get('overlay0', 'raw');
     --post-separator: get('overlay0', 'raw');
@@ -98,7 +99,7 @@
 
   // Sidebar
   .x1xgvd2v {
-    background-color: get('crust');
+    background-color: get('crust') !important;
 
     &[style='transform: translateX(0px);'] {
       background-color: get('mantle');
