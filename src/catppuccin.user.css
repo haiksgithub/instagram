@@ -220,7 +220,7 @@
       &[style*='background: rgb(38\, 38\, 38)'],
       &[style*='background: rgb(54\, 54\, 54)'],
       &[style*='background: rgb(255\, 255\, 255)'] {
-        background-color: get('crust') !important;
+        background-color: get('surface0') !important;
       }
     }
     
