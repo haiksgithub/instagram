@@ -102,7 +102,7 @@
     background-color: get('crust') !important;
 
     &[style='transform: translateX(0px);'] {
-      background-color: get('mantle');
+      background-color: get('mantle') !important;
     }
   }
 
