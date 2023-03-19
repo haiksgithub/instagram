@@ -137,6 +137,69 @@
     color: var(--web-always-white);
   }
 
+  // Monotone icons from the PNG sprite
+  latte_text_filter = @css{ brightness(0) saturate(100%) invert(28%) sepia(17%) saturate(835%) hue-rotate(196deg) brightness(97%) contrast(85%) };
+  frappe_text_filter = @css{ brightness(0) saturate(100%) invert(84%) sepia(5%) saturate(1519%) hue-rotate(192deg) brightness(100%) contrast(93%) };
+  macchiato_text_filter = @css{ brightness(0) saturate(100%) invert(80%) sepia(18%) saturate(377%) hue-rotate(192deg) brightness(103%) contrast(92%) };
+  mocha_text_filter = @css{ brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(1356%) hue-rotate(194deg) brightness(103%) contrast(91%) };
+  espresso_text_filter = @css{ brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(1356%) hue-rotate(194deg) brightness(103%) contrast(91%) };
+  
+  // Excluded:
+  // - _9ys7, _9_1f, _9ys8 (verified icon)
+  [style*='background-image: url("https://static.cdninstagram.com/rsrc.php/v3/y4/r/ewSyA8IItw_.png")'],
+  ._9zkj, ._a3ds, ._a3dt, ._a3du, ._a3dv, ._a3dw, ._9-b3, ._9znl, ._9z-6, ._a3dx, ._a3dy, ._a3dz, ._a3d-, ._a3d_, ._a3e0, ._9zm4, ._a3e1, ._a3e2, ._a3e3, ._a3e4, ._a3e5, ._a3e6, ._a3e7, ._a3e8, ._a3e9, ._a3ea, ._9_57, ._9_n5, ._9-y3, ._a3eb, ._a3ec, ._a3ed, ._a3ee, ._a04s, ._9zlu, ._9-yp, ._a3ef, ._a3eg, ._9_wm, ._a3eh, ._a3ei, ._9-j_, ._a3ej, ._a3ek, ._9_ij, ._9_d_, ._9_e1, ._9-mm, ._9_cx, ._9zm0, ._9zfi, ._9-ub, ._a3el, ._9-7-, ._9-1a, ._a3em, ._9zrp, ._a3en, ._9zz9, ._a3eo, ._9zmr, ._9-8d, ._9zhi, ._a3ep, ._9zs0, ._9-j-, ._a3eq, ._9zli, ._9_4y, ._9zm2, ._9zfj, ._9zlg, ._a3er, ._9-lv, ._9_ug, ._9_sh, ._9_sj, ._9-k0, ._9z-c, ._9_35, ._9_hh, ._a3es, ._a3et, ._a3eu, ._9-v-, ._9_4d, ._9zlh, ._a3ev, ._a3ew, ._a3ex, ._a3ey, ._9_7m, ._9_fv, ._a3ez,
+  ._9-zf, ._9-zg, ._9-ze, ._a9fa, ._9-zh, ._9-zi, ._9-zj, ._9-zk, ._9-zl, ._9-zm, ._9-zn, ._9-zo, ._9-zp, ._9-zq, ._9-zr, ._9-zs, ._9-zt, ._a3op, ._a3oq, ._9-zu, ._9-zv, ._9-zw, ._9-zx, ._9-zy, ._9-zz, ._9-z-, ._a3or, ._a3ot, ._a3os, ._9zs1, ._9zs2, ._9-z_, ._9--0, ._9--1, ._9--2, ._9--3, ._9--4, ._9--5, ._9--6, ._9--7, ._9--f, ._9--8, ._9--9, ._9--a, ._9--b, ._9--c, ._9--d, ._9--e, ._a3ou, ._9--g, ._9--h, ._9--i, ._9--j, ._9--l, ._9--k, ._9--m, ._9--n, ._9--o, ._9--p, ._9--q, ._a3ov, ._9--s, ._9--r, ._9--t, ._9--u, ._9--v, ._9--x, ._9--y, ._9--w, ._9--z, ._9--_, ._9-_0, ._9-_1, ._9-_2, ._9-_3, ._9---, ._9-_4, ._9-_5, ._9-_6, ._9-_7, ._a3wy, ._9-_8, ._9-_9, ._a3ow, ._9-_a, ._9-_b, ._9-_c, ._9-_d, ._9-_e, ._9-_f, ._9-_g, ._9-_h, ._9-_i, ._9-_j, ._9-_k, ._9-_l, ._9-_m, ._9-_n, ._9-_o, ._a3ox, ._9-_p, ._9-_q, ._a9fb, ._9-_t, ._9-_r, ._9-_s, ._a93g, ._9-_u, ._9-_v, ._a9fc, ._9-_w, ._9-_x, ._9-_y, ._9-_z, ._9-_-, ._9-__, ._9_00, ._a3oy, ._9_01, ._9_02, ._9_03, ._9_04, ._9_05, ._9_08, ._9_09, ._9_07, ._9_06, ._9_0a, ._9_0b, ._9_0c, ._9_0d, ._9_0e, ._9_0f, ._9_0g, ._a93h, ._9_0h, ._9_0i, ._9_0j, ._9_0k, ._aepo, ._9_0l, ._9_0m, ._9_0n, ._9_0o, ._9_0p, ._a3oz, ._a93l, ._9_0r, ._9_0s, ._a7tk, ._9_0q, ._a3o-, ._9_0t, ._9_0v, ._9_0u, ._a9ej, ._9_0w, ._9_0x, ._9_0y, ._9_0z, ._9_0_, ._9_0-, ._9_10, ._9_11, ._9_12, ._9_13, ._9_14, ._9_15, ._a3o_, ._9_18, ._9_19, ._9_1a, ._9_1e, ._9_1b, ._9_1c, ._9_1d, ._9_16, ._9_17, ._a3p0, ._9_1g, ._9_1i, ._9_1h, ._9_1j, ._9_1k, ._9_1l, ._9_1m, ._a9pw {
+    filter: lookup(flavor + '_text_filter');
+  }
+  
+  // Custom icons
+  instagram_gradient = radial-gradient(circle at 30% 107%, get('yellow') 0%, get('yellow') 5%, get('peach') 45%, get('mauve') 60%,get('blue') 90%);
+  verified_icon = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMzU3LjczOCA2My4yMTQzTDMxNi45MDUgMEwyNTAgMzQuMjg1N0wxODIuOTc2IDBMMTQyLjE0MyA2My4yMTQzTDY2LjkwNDggNjcuMDIzOEw2My4yMTQzIDE0Mi4yNjJMMCAxODMuMDk1TDM0LjI4NTcgMjUwTDAgMzE3LjAyNEw2My4yMTQzIDM1Ny44NTdMNjcuMDIzOCA0MzMuMDk1TDE0Mi4yNjIgNDM2Ljc4NkwxODMuMDk1IDUwMEwyNTAgNDY1LjcxNEwzMTcuMDI0IDUwMEwzNTcuODU3IDQzNi43ODZMNDMzLjA5NSA0MzIuOTc2TDQzNi43ODYgMzU3LjczOEw1MDAgMzE2LjkwNUw0NjUuNzE0IDI1MEw1MDAgMTgyLjk3Nkw0MzYuNzg2IDE0Mi4xNDNMNDMyLjk3NiA2Ni45MDQ4TDM1Ny43MzggNjMuMjE0M1pNMTQxLjY2NiAyNTkuMDQ4TDIxOC45MjggMzM2LjMwOUwzNTguMDk1IDIwMS40MjlMMzMzLjIxNCAxNzUuODMzTDIxOS40MDQgMjg2LjE5TDE2Ni45MDQgMjMzLjgwOUwxNDEuNjY2IDI1OS4wNDhaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K';
+  
+  // Verified icon
+  ._9ys7,
+  ._9_1f,
+  ._9ys8 {
+    position: relative;
+    background-image: none;
+    background-color: get(accent);
+    mask-image: url(verified_icon);
+    mask-size: 100%;
+  }
+  
+  [style*='background-image: url("https://static.cdninstagram.com/rsrc.php/v3/y4/r/ewSyA8IItw_.png")'] {
+    // No photo icon
+    &[style*='background-position: 0px -97px'] {
+      filter: none;
+      background: get('mauve') !important;
+      background: instagram_gradient !important;
+      mask-image: url('https://static.cdninstagram.com/rsrc.php/v3/y4/r/ewSyA8IItw_.png');
+      mask-position: 0 -97px;
+    }
+    
+    // Private page icon
+    &[style*='background-position: -49px -97px'] {
+      filter: none;
+      background: get('mauve') !important;
+      background: instagram_gradient !important;
+      mask-image: url('https://static.cdninstagram.com/rsrc.php/v3/y4/r/ewSyA8IItw_.png');
+      mask-position: -49px -97px;
+    }
+
+    &[style*='background-position: -49px 0px'] {
+      filter: none;
+      background: get('mauve') !important;
+      background: instagram_gradient !important;
+      mask-image: url('https://static.cdninstagram.com/rsrc.php/v3/y4/r/ewSyA8IItw_.png');
+      mask-position: -49px 0;
+    }
+  }
+
+  // Post swipe icons
+  ._aaqh {
+    background-color: get('surface0');
+  }
+  
   // Inside primary buttons
   .xzloghq,
   ._acas:not(._acao) {
