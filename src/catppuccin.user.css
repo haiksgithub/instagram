@@ -71,6 +71,7 @@
     --ig-banner-background: get('crust', 'raw');
     --ig-highlight-background: get('surface0', 'raw');
     --ig-elevated-background: get('crust', 'raw');
+    --ig-hover-overlay: get('surface0', 'raw'), 0.5;
     --hover-overlay: get_transparency('surface0', 0.2);
 
     --ig-primary-button: get(accent, 'raw');
